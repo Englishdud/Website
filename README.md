@@ -1,2 +1,2 @@
 # Assignments
-my assignments check folder
+my assignments is in the folders
