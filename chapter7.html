@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="">
+            <p>First Name: 
+                <input type="text" name="firstname" size="15" maxlength="30" />
+            </p>
+            <p>Last Name: 
+                <input type="text" name="lastname" size="15" maxlength="30" />
+            </p>
+            <p>Password: 
+                <input type="password" name="password" size="15" maxlength="30" />
+            </p>
+            <p>Confirm password: 
+                <input type="password" name="confirmpassword" size="15" maxlength="30" />
+            </p>
+            <p>How was your login expierience: </p>
+                <textarea name="feedback" cols="20" rows="20">Enter your comment...</textarea>
+            <p>Gender:
+                <br />
+                <input type="radio" name="gender" value="male" />male
+                <input type="radio" name="gender" value="female" />Female
+            </p>
+            <p>Positions Available:
+                <br />
+                <input type="radio" name="positionsavailabe" value="entry" />Entry-level
+                <input type="radio" name="positionsavailabe" value="Pro" />Pro-Programmer
+            </p>
+            <p>Availablity: 
+                <br />
+                <input type="checkbox" name="availabledate" value="sunday">Sunday
+                <input type="checkbox" name="availabledate" value="monday">Monday
+                <input type="checkbox" name="availabledate" value="tuesday">Tuesday
+            </p>
+            <p>Select Your City: </p>
+            <select name="city">
+                <option value="toronto">toronto</option>
+                <option value="NewYork">New York</option>
+                <option value="Sanfrancisco">San Francisco</option>
+            </select>
+            <p>Pick Your Favorite Language: </p>
+            <select name="Favoriteprogramminglanguage" size="3" multiple="multiple">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="HTML">HTML</option>
+            </select>
+        </form>
+        <hr />
+        <form action="">
+            <p>Salutation </p>
+            <select name="Salutation">
+                <option value="#1">#1</option>
+                <option value="#2">#2</option>
+            </select>
+            <p>First Name: 
+                <input type="text" name="firstname" size="15" maxlength="30" />
+            </p>
+            <p>Last Name: 
+                <input type="text" name="lastname" size="15" maxlength="30" />
+            </p>
+            <p>Gender:
+                <input type="radio" name="gender" value="male" />Male
+                <input type="radio" name="gender" value="female" />Female
+            </p>
+            <label for="username">date of birth:</label>
+            <input type="date" name="depart" />
+            <p>Address : </p>
+                <textarea name="feedback" cols="30" rows="3"></textarea>
+        </form>
+        <form action="">
+            <!-- Couldn't figure out the 2nd, 3rd,4th form (discuss in class) -->
+            <hr />
+            <p>First Name: 
+                <input type="text" name="firstname" size="15" maxlength="30" />
+            </p>
+            <p>Last Name: 
+                <input type="text" name="lastname" size="15" maxlength="30" />
+            </p>
+            <p>E-mail: 
+                <input type="text" name="lastname" size="15" maxlength="30" />
+            </p>
+            <p>
+                <input type="radio" name="gender" value="male" />Male
+                <br />
+                <input type="radio" name="gender" value="female" />Female
+                <br />
+                <input type="submit" value="Submit" /><input type="submit" value="Reset" />
+            </p>
+        </form>
+    </body>
+</html>
