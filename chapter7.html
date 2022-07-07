@@ -2,12 +2,16 @@
 <html>
     <body>
         <form action="">
-            <p>First Name: 
-                <input type="text" name="firstname" size="15" maxlength="30" />
+            <fieldset>
+                <legend style="text-align: center;">name</legend>
+            
+            <p style="text-align: center;">First Name: 
+                <input type="text" name="firstname" size="15" maxlength="30" placeholder="firstname"/>
             </p>
             <p>Last Name: 
-                <input type="text" name="lastname" size="15" maxlength="30" />
-            </p>
+                <input type="text" name="lastname" size="15" maxlength="30" required="required"/>
+                <input type="submit" value="submitnames" />
+            </p></fieldset>
             <p>Password: 
                 <input type="password" name="password" size="15" maxlength="30" />
             </p>
@@ -26,11 +30,16 @@
                 <input type="radio" name="positionsavailabe" value="entry" />Entry-level
                 <input type="radio" name="positionsavailabe" value="Pro" />Pro-Programmer
             </p>
+            <p>Positions Available:
+                <br />
+                <input type="radio" name="positionsavailabe" value="entry" />Entry-level
+                <input type="radio" name="positionsavailabe" value="Pro" />Pro-Programmer
+            </p>
             <p>Availablity: 
                 <br />
-                <input type="checkbox" name="availabledate" value="sunday">Sunday
-                <input type="checkbox" name="availabledate" value="monday">Monday
-                <input type="checkbox" name="availabledate" value="tuesday">Tuesday
+                <input type="radio" id="sunday" name="availabledate" value="sunday"><label for="sunday">Sunday</label><br />
+                <input type="radio" id="monday" name="availabledate" value="monday"><label for="monday">Monday</label><br />
+                <input type="radio" id="tuesday"name="availabledate" value="tuesday"><label for="tuesday">Tuesday</label>
             </p>
             <p>Select Your City: </p>
             <select name="city">
@@ -44,9 +53,15 @@
                 <option value="Java">Java</option>
                 <option value="HTML">HTML</option>
             </select>
+            <p>Upload your song in mp3 format:</p>
+            <input type="file" name="user-song"><br />
+            <input type="submit" value="upload" />
+            <button>aaa</button>
         </form>
         <hr />
         <form action="">
+            <fieldset>
+                <legend>Personal Details</legend>
             <p>Salutation </p>
             <select name="Salutation">
                 <option value="#1">#1</option>
@@ -65,10 +80,51 @@
             <label for="username">date of birth:</label>
             <input type="date" name="depart" />
             <p>Address : </p>
-                <textarea name="feedback" cols="30" rows="3"></textarea>
+                <textarea name="address" cols="30" rows="3"></textarea>
+            </fieldset>
+        </form>
+        <form>
+            <hr />
+            <h1>Travel reservation form</h1>
+            <h3>* Denotes Mandatory</h3>
+            <br />
+            <p>Full Name*: </p>
+                <input type="text" name="fullname" size="15" maxlength="30" placeholder="FirstName LastName"/>
+                <p>Email address*</p>
+                <input type="email" name="email" placeholder="EMAIL_ADDRESS"/>
+                <p>Select Your Tour Package*: </p>
+            <select name="tour_package">
+                <option value="mars">Mars</option>
+                <option value="saturn">Saturn</option>
+                <option value="jupiter">Jupiter</option>
+            </select><br />
+            <br />
+            <label for="usernamae">Arrival Date*: </label><br />
+            <input type="date" name="depart" />
+            <p>What would you like to avail*: 
+                <br />
+                <input type="radio" id="boarding" name="avail" value="boarding"><label for="boarding">Boarding</label><br />
+                <input type="radio" id="fooding" name="avail" value="fooding"><label for="fooding">Fooding</label>
+            </p>
+            <p>Agree To Terms And Conditions?* (Give away your life for ticket?): 
+                <br />
+                <input type="radio" name="terms" value="yes"><label>yes*</label>
+                <input type="radio" name="terms" value="no"><label>no</label>
+            </p>
+            <input type="submit" value="Submit" />
+        </form>
+        <form>
+            <hr />
+            <h1>Application form</h1>
+            <br />
+            <p><label>First Name: <input type="text" name="firstname" size="15" maxlength="30" /> <label>Last Name: </label> <input type="text" name="lastname" size="15" maxlength="30" /></p>
+            <p><label for="username">date of birth: </label><input type="date" name="depart" /><label>Age: </label><select name="age" size="1" multiple="multiple"><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11" selected="selected">11</option><option value="12">12</option><option value="13">13</option></select></p>
+            <p><label>Gender: </label><select name="gender"><option value="male">Male</option><option value="female">Female</option></select><label>Email: </label><input type="was_supposed_to_be_text_buy_not." name="email" size="15" maxlength="30" placeholder="email address goes here ->"></p>
+            <p><label>Positions Availabe: </label> <input type="radio" name="positionsavailabe" value="entry" />Entry-level <input type="radio" name="positionsavailabe" value="Pro" />Pro-Programmer</p>
+            <p><label>programming languages: </label><input type="checkbox" name="language" value="html">html<input type="checkbox" name="language" value="python">python<input type="checkbox" name="language" value="java">Java</p>
+            <p><label>passwrd: </label><input type="password" name="passwrd" size="15" maxlength="300" /></p>
         </form>
         <form action="">
-            <!-- Couldn't figure out the 2nd, 3rd,4th form (discuss in class) -->
             <hr />
             <p>First Name: 
                 <input type="text" name="firstname" size="15" maxlength="30" />
@@ -79,12 +135,13 @@
             <p>E-mail: 
                 <input type="text" name="lastname" size="15" maxlength="30" />
             </p>
+            
             <p>
                 <input type="radio" name="gender" value="male" />Male
                 <br />
                 <input type="radio" name="gender" value="female" />Female
                 <br />
-                <input type="submit" value="Submit" /><input type="submit" value="Reset" />
+                <input type="submit" value="Submit" /><input type="reset" value="Reset" />
             </p>
         </form>
     </body>
