@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* universal selector selectes everything in the body tag including itself */
+            h1, h4 {
+                background-color: red;
+                display: inline;
+            }
+            /* class selector and id selector is for targeting a specific item */
+            li>p {
+                background-color: red;
+                display: inline;
+            }
+            li p {
+                background-color: aqua;
+                display: inline;
+            }
+            p+a {
+                background-color: red;
+                display: inline;
+            }
+            h5~h2 {
+                color: red;
+                display: inline;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>Hello.</h1><br />
+        <h4>Bye.</h4>
+        <ul>
+            <li><a><p>Hi</p></a></li>
+            <li><p>hello</p></li>
+            <a>Okay</a>
+            <p>Ok</p>
+            <a>K</a>
+            <h5>Hi im small</h5>
+            <h2>I'm his big brother</h2><br />
+            <h2>I'm his big cousin</h2><br />
+            <h2>I'm his big cousin</h2><br />
+            <p>I'm just Squeezing through</p>
+            <h2>I'm his big cousin</h2><br />
+            <h2>I'm his big cousin</h2><br />
+            <h2>I'm his big cousin</h2><br />
+            <h2>I'm his big cousin</h2><br />
+            <h2>I'm his big cousin</h2><br />
+        </ul>
+    </body>
+</html>
